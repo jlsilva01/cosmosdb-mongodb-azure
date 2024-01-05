@@ -36,7 +36,7 @@ az group list -o table
 7. Ajustar a variável *resource_group_name* do arquivo `variables.tf` com o nome do Resource Group informado no passo anterior.
 ```terraform
 variable "resource_group_name" {
-  default = "learn-877e311a-66ab-401b-9372-06326c9bd083"
+  default = "learn-877e311a-66ab-401b-9372-06326c9bd083" # informar o nome novo do resource group
 }
 ```
 

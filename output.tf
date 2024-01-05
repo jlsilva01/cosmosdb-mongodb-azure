@@ -1,24 +1,32 @@
-output "sqlserver_001" {
-  description = "Nome do SQL Server"
-  value       = azurerm_mssql_server.sql.name
+# Show endpoint cosmosdb
+output "cosmosdb_endpoint" {
+  description = "Endpoint do CosmosDB"
+  value       = azurerm_cosmosdb_account.cosmosdb.endpoint
 }
 
-output "database_001" {
-  description = "Nome do Banco de Dados"
-  value       = azurerm_mssql_database.sql.name
+# port number
+output "cosmosdb_version" {
+  description = "Versão do CosmosDB"
+  value       = azurerm_cosmosdb_account.cosmosdb.mongo_server_version
 }
 
-output "username" {
-  description = "Usuário SQL Server"
-  value       = var.usuario_admin
+# Show connection string cosmosdb
+output "cosmosdb_connection_strings" {
+  description = "Connection string do CosmosDB"
+  value       = azurerm_cosmosdb_account.cosmosdb.connection_strings
+  sensitive   = true
 }
 
-output "password" {
-  description = "Senha SQL Server"
-  value       = var.password
+# Show primary keys cosmosdb
+output "cosmosdb_primary_master_key" {
+  description = "Primary master key do CosmosDB"
+  value       = azurerm_cosmosdb_account.cosmosdb.primary_key
+  sensitive   = true
 }
 
-output "public_ip" {
-  description = "Meu IP Público"
-  value       = data.ipify_ip.public.ip_cidr
+# Show primary keys cosmosdb
+output "cosmosdb_primary_mongodb_connection_string" {
+  description = "Primary Connection String do CosmosDB"
+  value       = azurerm_cosmosdb_account.cosmosdb.primary_mongodb_connection_string
+  sensitive   = true
 }
