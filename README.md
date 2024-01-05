@@ -6,9 +6,8 @@
 - [Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Terraform](https://www.terraform.io/downloads)
-- [SQL Server Management Studio - SSMS](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+- [MongoDB Compass](https://www.mongodb.com/try/download/compass)
 - Conta _@outlook.com_ específica para esta atividade
-
 
 ### Roteiro:
 
@@ -58,7 +57,7 @@ terraform plan
 terraform apply
 ```
 9. Logar no [portal.azure.com](https://portal.azure.com/) e conferir o deploy do SQL do Azure.
-10. Abrir o SSMS e logar no SQL do Azure a partir do seu computador.
+10. Abrir o MongoDB Compass e logar no CosmosDB do Azure a partir do seu computador.
 11. Destruir os recursos criados.
 ```bash copy
 terraform destroy
