@@ -1,4 +1,4 @@
-## Criando SQL Azure serverless no Azure gratuito - Sem cartão de crédito
+## Criando CosmosDB serverless no Azure gratuito - Sem cartão de crédito
 #### Disclaimer: Utilizar somente para fins de estudo e testes da tecnologia
 
 ### Pré-requisitos:
